@@ -1,13 +1,13 @@
-# Calculate the user's monthly savings based on inputted monthly income and expenses
-monthly_income = int(input("Enter your monthly income: "))
-total_monthly_expenses = int(input("Enter your total monthly expenses: "))
+# User Input for Financial Details
+monthly_income = float(input("Enter your monthly income: "))  # Using float to allow for decimal input
+monthly_expenses = float(input("Enter your total monthly expenses: "))
 
-# Calculating monthly savings
-monthly_savings = monthly_income - total_monthly_expenses
+# Calculate Monthly Savings
+monthly_savings = monthly_income - monthly_expenses
 
-# Calculating the projected savings after one year with interest (5%)
+# Project Annual Savings with Interest (5%)
 projected_savings = monthly_savings * 12 + (monthly_savings * 12 * 0.05)
 
-# Printing the results
+# Output Results
 print("Your monthly savings are: ", monthly_savings)
 print("Projected savings after one year, with interest, is: ", projected_savings)
