@@ -4,9 +4,9 @@ def daily_reminder():
     #prompt the user to input the task description, level of priority and if it is time bound
     print("Welcome to your daily reminder")
     task = input("Enter your task: ")
-    priority = input("Priority (high/medium/low)").lower()
     Is_it_timebound =input("Is it time-bound (yes/no)").lower()
-    
+    priority = input("Priority (high/medium/low)").lower()
+
     match task:
         case _ if priority == "high" and Is_it_timebound == "yes":
             print(f"Reminder: {task} is a high priority task that requires immediate attention today!")
