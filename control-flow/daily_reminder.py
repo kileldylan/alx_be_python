@@ -2,7 +2,7 @@ def daily_reminder():
     # Prompt the user to input the task description, level of priority, and if it is time-bound
     print("Welcome to your daily reminder")
     task = input("Enter your task: ")  # Exactly as required
-    time_bound = input("Is it time-bound? (yes/no): ").lower()  # Exactly as required with correct spacing and format
+    time_bound = input("Is it time-bound? (yes/no: )").lower()  # Exactly as required with correct spacing and format
     priority = input("Priority (high/medium/low): ").lower()  # Exactly as required
 
     # Match Case statement for basic conditions
