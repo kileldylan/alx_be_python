@@ -1,10 +1,10 @@
 #program to view,add and remove items in the shopping list
 
 def display_menu():
-    print("\nShopping List Manager")
+    print("Shopping List Manager")
     print("1. Add Item")
-    print("2. Remove Items")
-    print("3. View All Items")
+    print("2. Remove Item")
+    print("3. View List")
     print("4. Exit")
     
 def main():
