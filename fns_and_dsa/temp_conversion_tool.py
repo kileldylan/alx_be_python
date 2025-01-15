@@ -1,6 +1,6 @@
 # Define Global Conversion Factors
-FAHRENHEIT_TO_CELSIUS_FACTOR = 5 / 9  # Conversion factor for Fahrenheit to Celsius
-CELSIUS_TO_FAHRENHEIT_FACTOR = 9 / 5  # Conversion factor for Celsius to Fahrenheit
+FAHRENHEIT_TO_CELSIUS_FACTOR = 5/9  # Conversion factor for Fahrenheit to Celsius
+CELSIUS_TO_FAHRENHEIT_FACTOR = 9/5  # Conversion factor for Celsius to Fahrenheit
 FREEZING_POINT_FAHRENHEIT = 32  # Freezing point of water in Fahrenheit
 FREEZING_POINT_CELSIUS = 0  # Freezing point of water in Celsius
 
