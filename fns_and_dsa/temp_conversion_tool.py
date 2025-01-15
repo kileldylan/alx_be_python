@@ -7,13 +7,13 @@ FREEZING_POINT_CELSIUS = 0  # Freezing point of water in Celsius
 # Function to convert Fahrenheit to Celsius
 def convert_to_celsius(fahrenheit):
     """Converts Fahrenheit to Celsius using the global conversion factor."""
-    celsius = (fahrenheit - FREEZING_POINT_FAHRENHEIT) * FAHRENHEIT_TO_CELSIUS_FACTOR
+    celsius = (fahrenheit-FREEZING_POINT_FAHRENHEIT)*FAHRENHEIT_TO_CELSIUS_FACTOR
     return celsius
 
 # Function to convert Celsius to Fahrenheit
 def convert_to_fahrenheit(celsius):
     """Converts Celsius to Fahrenheit using the global conversion factor."""
-    fahrenheit = (celsius * CELSIUS_TO_FAHRENHEIT_FACTOR) + FREEZING_POINT_FAHRENHEIT
+    fahrenheit = (celsius*CELSIUS_TO_FAHRENHEIT_FACTOR) + FREEZING_POINT_FAHRENHEIT
     return fahrenheit
 
 # Main function to interact with the user
