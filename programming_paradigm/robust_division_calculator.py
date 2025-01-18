@@ -17,4 +17,6 @@ class Division:
                 return print(f"The result of {numerator} divided by {denominator} is {results}")
         except ValueError as e:
             print(e)
+        except ZeroDivisionError as e:
+            print(e)
     
