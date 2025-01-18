@@ -5,18 +5,20 @@ class Division:
         self.numerator = numerator
         self.denominator = denominator
     
-    def safe_divide(self,numerator, denominator):
+    def safe_divide(numerator, denominator):
         try:
+            # Convert inputs to floats
             numerator = float(numerator)
             denominator = float(denominator)
             
-            if denominator == 0:
-                raise ZeroDivisionError("Error: Cannot divide by zero")
-            else:
-                results = numerator/denominator
-                return print(f"The result of {numerator} divided by {denominator} is {results}")
-        except ValueError as e:
-            print(e)
-        except ZeroDivisionError as e:
-            print(e)
-    
+            # Perform division inside a try-except block to catch ZeroDivisionError
+            result = numerator / denominator
+            return f"The result of the division is {result:.2f}"
+        
+        except ZeroDivisionError:
+            # Handle division by zero
+            return "Error: Cannot divide by zero."
+        
+        except ValueError:
+            # Handle non-numeric inputs
+            return "Error: Please enter numeric values only."
