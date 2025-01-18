@@ -21,5 +21,5 @@ class BankAccount:
             print("Withdrawal amount must be positive.")
             return False
 
-    def display(self):
+    def display_balance(self):
         print(f"Current Balance: Ksh {self.account_balance:.2f}")

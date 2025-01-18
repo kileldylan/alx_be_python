@@ -29,7 +29,7 @@ def main():
             if account.withdraw(amount):
                 print(f"Withdrew: Ksh {amount:.2f}")
         elif command == "display":
-            account.display()
+            account.display_balance()
         else:
             print("Invalid command. Use 'deposit:<amount>', 'withdraw:<amount>', or 'display'.")
     except ValueError:
