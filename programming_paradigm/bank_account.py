@@ -5,21 +5,15 @@ class BankAccount:
     def deposit(self, amount):
         if amount > 0:
             self.account_balance += amount
-            return self.account_balance
         else:
-            print("Deposit amount must be positive.")
-            return None
+            raise ValueError("Deposit amount must be positive.")
 
     def withdraw(self, amount):
-        if amount > self.account_balance:
-            print("Insufficient funds.")
-            return False
-        elif amount > 0:
+        if amount <= self.account_balance:
             self.account_balance -= amount
             return True
-        else:
-            print("Withdrawal amount must be positive.")
-            return False
+        return False  # Return False instead of printing "Insufficient funds."
 
     def display_balance(self):
-        print(f"Current Balance: Ksh {self.account_balance:.2f}")
+        # Use the expected "$" format
+        print(f"Current Balance: ${self.account_balance:.2f}")
