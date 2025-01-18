@@ -1,11 +1,5 @@
 #python script to determine errors in a robust calculator
-
-class Division:
-    def __init__(self,numerator,denominator):
-        self.numerator = numerator
-        self.denominator = denominator
-    
-    def safe_divide(numerator, denominator):
+def safe_divide(numerator, denominator):
         try:
             # Convert inputs to floats
             numerator = float(numerator)
