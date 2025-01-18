@@ -7,7 +7,7 @@ def safe_divide(numerator, denominator):
             
             # Perform division inside a try-except block to catch ZeroDivisionError
             result = numerator / denominator
-            return f"The result of the division is {result:.2f}"
+            return f"The result of the division is {result:.1f}"
         
         except ZeroDivisionError:
             # Handle division by zero
