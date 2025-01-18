@@ -11,7 +11,7 @@ class Division:
             denominator = float(denominator)
             
             if denominator == 0:
-                raise ZeroDivisionError("Number cannot be divided by zero!")
+                raise ZeroDivisionError("Error: Cannot divide by zero")
             else:
                 results = numerator/denominator
                 return print(f"The result of {numerator} divided by {denominator} is {results}")
